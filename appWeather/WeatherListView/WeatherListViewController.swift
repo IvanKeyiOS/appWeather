@@ -13,7 +13,6 @@ class WeatherListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidLoad() {
