@@ -68,7 +68,7 @@ class WeatherViewController: UIViewController {
             let locationName = ifCurrentLocation == true ? "Current Location" : "\(weatherModel?.location.name ?? "")"
             strongSelf.labelCityName.text = locationName
             strongSelf.labelWeatherCondition.text = "\(weatherModel?.current.condition?.text ?? "")"
-            strongSelf.labelTemperature.text = "\(weatherModel?.current.tempC ?? 0.0)"
+            strongSelf.labelTemperature.text = "\(weatherModel?.current.tempC ?? 0.0) °C"
             strongSelf.weatherImageView.image = ImageManager.getWeatherImagesBasedOn(codeForWeather: weatherModel?.current.condition?.code ?? 0)
             
             LocalDataManager.weatherCollection.append(WeatherLocalModel(cityName: locationName, weatherCondition: weatherModel?.current.condition?.text ?? "", temperature: String(weatherModel?.current.tempC ?? 0.0), imageCode: weatherModel?.current.condition?.code ?? 0))
@@ -91,9 +91,9 @@ class WeatherViewController: UIViewController {
         guard let weather = weatherTracker else { return }
         switch segmentControl.selectedSegmentIndex {
         case 0:
-            self.labelTemperature.text = "\(weather.current.tempC ?? 0.0)"
+            self.labelTemperature.text = "\(weather.current.tempC ?? 0.0) °C"
         case 1:
-            self.labelTemperature.text = "\(weather.current.tempF ?? 0.0)"
+            self.labelTemperature.text = "\(weather.current.tempF ?? 0.0) °F"
         default:
             break
         }
