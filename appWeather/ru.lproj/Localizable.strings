@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  appWeather
+
+  Created by Иван Курганский on 07/10/2023.
+  
+*/
+
+
+"WelcomeMessage" = "Welcome to my app!";
