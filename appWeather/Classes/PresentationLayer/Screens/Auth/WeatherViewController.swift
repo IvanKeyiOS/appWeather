@@ -62,7 +62,7 @@ class WeatherViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.weatherTracker = weatherModel
-            let locationName = ifCurrentLocation == true ? "Current Location" : "\(weatherModel?.location.name ?? "")"
+            let locationName = ifCurrentLocation == true ? "text" : "\(weatherModel?.location.name ?? "")"
             strongSelf.labelCityName.text = locationName
             strongSelf.labelWeatherCondition.text = "\(weatherModel?.current.condition?.text ?? "")"
             strongSelf.labelTemperature.text = "\(weatherModel?.current.tempC ?? 0.0) °C"
@@ -125,6 +125,14 @@ extension WeatherViewController: UISearchBarDelegate {
             self.searchedCity = searchText
             self.makeRequest()
         }
+    }
+}
+
+enum Localization: String {
+    case text = "text"
+    
+    var text: String {
+        return NSLocalizedString(rawValue, comment: "")
     }
 }
 

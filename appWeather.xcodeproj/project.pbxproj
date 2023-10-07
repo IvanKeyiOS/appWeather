@@ -23,6 +23,7 @@
 		AE0FE5C92AC99117006CA584 /* WeatherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FE5C82AC99117006CA584 /* WeatherListTableViewCell.swift */; };
 		AE0FE5CD2AC992BD006CA584 /* WeatherListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0FE5CC2AC992BD006CA584 /* WeatherListTableViewCell.xib */; };
 		AE0FE5E82AD18ECF006CA584 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FE5E72AD18ECF006CA584 /* WeatherService.swift */; };
+		AE0FE5FA2AD19EA0006CA584 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE0FE5FC2AD19EA0006CA584 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,10 @@
 		AE0FE5C82AC99117006CA584 /* WeatherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewCell.swift; sourceTree = "<group>"; };
 		AE0FE5CC2AC992BD006CA584 /* WeatherListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherListTableViewCell.xib; sourceTree = "<group>"; };
 		AE0FE5E72AD18ECF006CA584 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		AE0FE5FB2AD19EA0006CA584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE0FE5FD2AD19ED0006CA584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		AE0FE5FE2AD19ED0006CA584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AE0FE5FF2AD19ED0006CA584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +147,7 @@
 		AE0FE5DE2AD18AFE006CA584 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				AE0FE5FC2AD19EA0006CA584 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = AE0FE5932AC98FCD006CA584;
 			productRefGroup = AE0FE59D2AC98FCD006CA584 /* Products */;
@@ -275,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0FE5FA2AD19EA0006CA584 /* Localizable.strings in Resources */,
 				AE0FE5CD2AC992BD006CA584 /* WeatherListTableViewCell.xib in Resources */,
 				AE0FE5AF2AC98FCF006CA584 /* LaunchScreen.storyboard in Resources */,
 				AE0FE5AC2AC98FCF006CA584 /* Assets.xcassets in Resources */,
@@ -311,6 +319,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE0FE5A62AC98FCD006CA584 /* Base */,
+				AE0FE5FD2AD19ED0006CA584 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -319,8 +328,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE0FE5AE2AC98FCF006CA584 /* Base */,
+				AE0FE5FE2AD19ED0006CA584 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0FE5FC2AD19EA0006CA584 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0FE5FB2AD19EA0006CA584 /* en */,
+				AE0FE5FF2AD19ED0006CA584 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -330,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -390,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
