@@ -9,8 +9,7 @@ import UIKit
 
 class WeatherListViewController: UIViewController {
 
-
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
     }
@@ -24,7 +23,6 @@ class WeatherListViewController: UIViewController {
 }
 
 extension WeatherListViewController: UITableViewDelegate {
-    
 }
 
 extension WeatherListViewController: UITableViewDataSource {
@@ -42,6 +40,4 @@ extension WeatherListViewController: UITableViewDataSource {
         cell.weatherImage.image = ImageManager.getWeatherImagesBasedOn(codeForWeather: LocalDataManager.weatherCollection[indexPath.row].imageCode)
         return cell
     }
-    
-    
 }

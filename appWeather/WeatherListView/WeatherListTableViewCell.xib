@@ -50,13 +50,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.2272863484" green="0.22718689780000001" blue="0.55217772359999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.2272863484" green="0.22718689780000001" blue="0.55217772359999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.2272863484" green="0.22718689780000001" blue="0.55217772359999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="BO3-kJ-dIU" secondAttribute="bottom" constant="30" id="E0C-jY-bIz"/>
                             <constraint firstItem="BO3-kJ-dIU" firstAttribute="leading" secondItem="ptS-VN-PBA" secondAttribute="leading" constant="20" id="F5f-4w-1nz"/>
