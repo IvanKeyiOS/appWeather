@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3wo-Lr-Kzz"; */
+"3wo-Lr-Kzz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Partly Cloudy"; ObjectID = "5WY-Uo-hX0"; */
+"5WY-Uo-hX0.text" = "Partly Cloudy";
+
+/* Class = "UISearchBar"; placeholder = "Search Location"; ObjectID = "QZU-fM-U0n"; */
+"QZU-fM-U0n.placeholder" = "Search Location";
+
+/* Class = "UILabel"; text = "London"; ObjectID = "Ypp-0D-gLc"; */
+"Ypp-0D-gLc.text" = "London";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "g63-Zv-ybo"; */
+"g63-Zv-ybo.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; iIl-J3-efP.segmentTitles[0] = "Celsius"; ObjectID = "iIl-J3-efP"; */
+"iIl-J3-efP.segmentTitles[0]" = "Celsius";
+
+/* Class = "UISegmentedControl"; iIl-J3-efP.segmentTitles[1] = "Fahrenheit"; ObjectID = "iIl-J3-efP"; */
+"iIl-J3-efP.segmentTitles[1]" = "Fahrenheit";
+
+/* Class = "UILabel"; text = "Cities"; ObjectID = "q7J-m9-Bpi"; */
+"q7J-m9-Bpi.text" = "Cities";
+
+/* Class = "UILabel"; text = "30.0 "; ObjectID = "v0g-1Y-Fdb"; */
+"v0g-1Y-Fdb.text" = "30.0 ";
+
+/* Class = "UIButton"; configuration.title = "Cities"; ObjectID = "xyT-Bn-EvU"; */
+"xyT-Bn-EvU.configuration.title" = "Cities";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xyT-Bn-EvU"; */
+"xyT-Bn-EvU.normalTitle" = "Button";

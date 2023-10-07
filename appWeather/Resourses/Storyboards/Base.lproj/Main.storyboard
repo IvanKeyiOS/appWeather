@@ -36,8 +36,8 @@
                                                     <action selector="didTapLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQF-z1-LSs"/>
                                                 </connections>
                                             </button>
-                                            <searchBar contentMode="redraw" placeholder="Search Location" translatesAutoresizingMaskIntoConstraints="NO" id="QZU-fM-U0n">
-                                                <rect key="frame" x="72" y="0.0" width="250" height="56"/>
+                                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Location" translatesAutoresizingMaskIntoConstraints="NO" id="QZU-fM-U0n">
+                                                <rect key="frame" x="71.666666666666686" y="0.0" width="250" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="250" id="rva-aU-IN5"/>
                                                 </constraints>
@@ -180,9 +180,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pku-Mo-HRf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pku-Mo-HRf">
                                 <rect key="frame" x="0.0" y="189" width="393" height="609"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.2272863484" green="0.22718689780000001" blue="0.55217772359999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="separatorColor" red="0.2272863484" green="0.22718689780000001" blue="0.55217772359999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <sections/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-m9-Bpi">
                                 <rect key="frame" x="30" y="133" width="74" height="36"/>

@@ -10,7 +10,7 @@ import UIKit
 class ImageManager {
     static func getWeatherImagesBasedOn(codeForWeather: Int) -> UIImage? {
         let config =  UIImage.SymbolConfiguration.preferringMulticolor()
-
+        
         switch codeForWeather {
         case 1009, 1135:
             return UIImage(systemName: "smoke.fill", withConfiguration: config)
