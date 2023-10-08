@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  appWeather
+
+  Created by Иван Курганский on 07/10/2023.
+  
+*/
+
+"current_location" = "Current Location";
+"city_is_not_found" = "City is not found";
+"cities" = "Cities";
+"celsius" = "Celsius";
+"fahrenheit" = "Fahrenheit";
