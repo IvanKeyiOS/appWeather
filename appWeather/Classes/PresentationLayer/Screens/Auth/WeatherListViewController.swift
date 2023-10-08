@@ -11,10 +11,14 @@ class WeatherListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    @IBOutlet weak var citiesLabel: UILabel!
     override func viewWillAppear(_ animated: Bool) {
     }
     
     override func viewDidLoad() {
+        
+        let newLabelText = Localization.cities.text
+        citiesLabel.text = newLabelText
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self

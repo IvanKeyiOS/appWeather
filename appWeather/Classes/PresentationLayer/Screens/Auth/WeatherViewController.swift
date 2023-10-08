@@ -26,6 +26,14 @@ class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let newSegmentTitleZero = Localization.celsius.text
+        segmentControl.setTitle(newSegmentTitleZero, forSegmentAt: 0)
+        let newSegmentTitleOne = Localization.fahrenheit.text
+        segmentControl.setTitle(newSegmentTitleOne, forSegmentAt: 1)
+        
+        let newButtonTitle = Localization.cities.text
+        buttonCities.setTitle(newButtonTitle, for: .normal)
+        
         self.initialSetup()
     }
     
@@ -62,7 +70,7 @@ class WeatherViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.weatherTracker = weatherModel
-            let locationName = ifCurrentLocation == true ? "text" : "\(weatherModel?.location.name ?? "")"
+            let locationName = ifCurrentLocation == true ? "current_location" : "\(weatherModel?.location.name ?? "")"
             strongSelf.labelCityName.text = locationName
             strongSelf.labelWeatherCondition.text = "\(weatherModel?.current.condition?.text ?? "")"
             strongSelf.labelTemperature.text = "\(weatherModel?.current.tempC ?? 0.0) °C"
@@ -75,15 +83,23 @@ class WeatherViewController: UIViewController {
     
     fileprivate func makeRequest() {
         self.view.endEditing(true)
-        WeatherViewModel.fetchWeatherBasedOn(cityName: self.searchedCity) { WeatherModel, status in
+        WeatherViewModel.fetchWeatherBasedOn(cityName: self.searchedCity) { [weak self] weatherModel, status in
+            guard let self = self else { return }
             switch status {
             case true:
-                self.computeWeatherDetailsBeforeRendering(weatherModel: WeatherModel, ifCurrentLocation: false)
+                self.computeWeatherDetailsBeforeRendering(weatherModel: weatherModel, ifCurrentLocation: false)
             case false:
-                print("bad request")
+                DispatchQueue.main.async {
+                    self.labelCityName.text = Localization.cityIsNotFound.text
+                    self.labelWeatherCondition.text = ""
+                    self.labelTemperature.text = ""
+                    self.weatherImageView.image = UIImage(systemName: "exclamationmark.triangle.fill")
+                }
+               
             }
         }
     }
+
     
     @IBAction private func didSelectSegmentControl(_ sender: UISegmentedControl) {
         guard let weather = weatherTracker else { return }
@@ -129,7 +145,11 @@ extension WeatherViewController: UISearchBarDelegate {
 }
 
 enum Localization: String {
-    case text = "text"
+    case currentLocation = "current_location"
+    case cityIsNotFound = "city_is_not_found"
+    case cities = "cities"
+    case celsius = "celsius"
+    case fahrenheit = "fahrenheit"
     
     var text: String {
         return NSLocalizedString(rawValue, comment: "")
