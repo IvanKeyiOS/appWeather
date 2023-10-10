@@ -144,15 +144,4 @@ extension WeatherViewController: UISearchBarDelegate {
     }
 }
 
-enum Localization: String {
-    case currentLocation = "current_location"
-    case cityIsNotFound = "city_is_not_found"
-    case cities = "cities"
-    case celsius = "celsius"
-    case fahrenheit = "fahrenheit"
-    
-    var text: String {
-        return NSLocalizedString(rawValue, comment: "")
-    }
-}
 

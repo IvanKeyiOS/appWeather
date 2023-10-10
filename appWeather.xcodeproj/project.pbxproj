@@ -24,6 +24,7 @@
 		AE0FE5CD2AC992BD006CA584 /* WeatherListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0FE5CC2AC992BD006CA584 /* WeatherListTableViewCell.xib */; };
 		AE0FE5E82AD18ECF006CA584 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FE5E72AD18ECF006CA584 /* WeatherService.swift */; };
 		AE0FE5FA2AD19EA0006CA584 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE0FE5FC2AD19EA0006CA584 /* Localizable.strings */; };
+		AE0FE6012AD5F6DC006CA584 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0FE6002AD5F6DC006CA584 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		AE0FE5FD2AD19ED0006CA584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		AE0FE5FE2AD19ED0006CA584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AE0FE5FF2AD19ED0006CA584 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE0FE6002AD5F6DC006CA584 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		AE0FE5DE2AD18AFE006CA584 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				AE0FE6002AD5F6DC006CA584 /* Localization.swift */,
 				AE0FE5FC2AD19EA0006CA584 /* Localizable.strings */,
 			);
 			path = Localization;
@@ -302,6 +305,7 @@
 				AE0FE5BE2AC9905B006CA584 /* LocalDataManager.swift in Sources */,
 				AE0FE5C02AC9906B006CA584 /* ImageManager.swift in Sources */,
 				AE0FE5C52AC990D8006CA584 /* WeatherViewModel.swift in Sources */,
+				AE0FE6012AD5F6DC006CA584 /* Localization.swift in Sources */,
 				AE0FE5BC2AC9904B006CA584 /* LocationManager.swift in Sources */,
 				AE0FE5A02AC98FCD006CA584 /* AppDelegate.swift in Sources */,
 				AE0FE5C92AC99117006CA584 /* WeatherListTableViewCell.swift in Sources */,
