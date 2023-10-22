@@ -70,7 +70,7 @@ class WeatherViewController: UIViewController {
         DispatchQueue.main.async { [weak self] in
             guard let strongSelf = self else { return }
             strongSelf.weatherTracker = weatherModel
-            let locationName = ifCurrentLocation == true ? "current_location" : "\(weatherModel?.location.name ?? "")"
+            let locationName = ifCurrentLocation == true ? Localization.currentLocation.text : "\(weatherModel?.location.name ?? "")"
             strongSelf.labelCityName.text = locationName
             strongSelf.labelWeatherCondition.text = "\(weatherModel?.current.condition?.text ?? "")"
             strongSelf.labelTemperature.text = "\(weatherModel?.current.tempC ?? 0.0) °C"
