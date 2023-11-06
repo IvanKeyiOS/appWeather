@@ -43,4 +43,3 @@ struct WeatherLocalModel {
     let cityName, weatherCondition, temperature: String
     let imageCode: Int
 }
-
